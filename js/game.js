@@ -1,7 +1,7 @@
 import { createBoard } from './board.js';
 
 const MIN_CARDS = 4;
-const MAX_CARDS = 30;
+const MAX_CARDS = 20;
 
 function showInputModal() {
     const modal = document.getElementById('input-modal');
