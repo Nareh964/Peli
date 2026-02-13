@@ -8,7 +8,27 @@
 </head>
 <body>
     <h1>Muistipeli</h1>
+    
+    <button class="new">Uuden peli</button>
+
+    <div class="click">Tries : 0</div>
+    <div class="time">Time : 0</div>
     <div id="game-board"></div>
+
+    
+    <div id="input-modal" class="modal">
+        <div class="modal-content">
+            <h2>Uuden pelin aloitus</h2>
+            <p>Syötä korttien määrä (parillinen luku, 4-30):</p>
+            <div class="input-group">
+                <input type="number" id="card-input" min="4" max="30" step="2" placeholder="Esim. 16">
+                <button id="card-submit">Aloita peli</button>
+            </div>
+            <p class="error-message" id="error-message"></p>
+        </div>
+    </div>
+
+    
     <script type="module" src="./js/game.js"></script>
 </body>
 </html>
