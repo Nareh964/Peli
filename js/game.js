@@ -1,7 +1,7 @@
 import { createBoard } from './board.js';
 
 const MIN_CARDS = 4;
-const MAX_CARDS = 20;
+const MAX_CARDS = 30;
 
 function showInputModal() {
     const modal = document.getElementById('input-modal');
@@ -63,5 +63,4 @@ document.addEventListener('DOMContentLoaded', () => {
     if (newGameButton) {
         newGameButton.addEventListener("click", showInputModal);
     }
-
 });
